@@ -1,10 +1,24 @@
-namespace PostmanClone.UI
+namespace PostmanClone.UI;
+
+public partial class Main : Form
 {
-    public partial class Main : Form
+    public Main()
     {
-        public Main()
+        InitializeComponent();
+    }
+
+    private void btnCallAPI_Click(object sender, EventArgs e)
+    {
+        try
         {
-            InitializeComponent();
+            lblSystemStatus.Text = "Calling API...";
+
+            lblSystemStatus.Text = "Ready";
+        }
+        catch (Exception ex)
+        {
+
+            throw;
         }
     }
 }

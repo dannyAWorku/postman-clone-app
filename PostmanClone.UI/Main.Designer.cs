@@ -79,6 +79,7 @@
             btnCallAPI.TabIndex = 3;
             btnCallAPI.Text = "Go";
             btnCallAPI.UseVisualStyleBackColor = false;
+            btnCallAPI.Click += btnCallAPI_Click;
             // 
             // txtResult
             // 
